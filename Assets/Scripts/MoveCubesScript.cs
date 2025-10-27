@@ -11,8 +11,6 @@ public class MoveCubesScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // textObject.text = "Click on mouse to select next cube";
-
         for (int i = 0; i < cubes.Length; i++)
         {
             cubes[i] = GameObject.CreatePrimitive(PrimitiveType.Cube);
@@ -61,8 +59,6 @@ public class MoveCubesScript : MonoBehaviour
         {
             newPosition.z = minMovementPosition;
         }
-
-        Debug.Log("Position: " + newPosition.ToString());
 
         cubes[selectedCubeIndex].transform.position = newPosition;
     }
