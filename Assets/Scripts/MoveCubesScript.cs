@@ -25,7 +25,7 @@ public class MoveCubesScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             cubes[selectedCubeIndex].GetComponent<Renderer>().material.color = Color.white;
             if (selectedCubeIndex < cubes.Length - 1)
